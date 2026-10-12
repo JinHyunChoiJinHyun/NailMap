@@ -32,11 +32,11 @@ class ApiError(RuntimeError):
     pass
 
 # ---------------------------------------------------------------------------
-# 1) 소상공인시장진흥공단 상가(상권)정보 API (상가 좌표 정보)
+# 1) SEMAS (소상공인시장진흥공단) 상가 정보 API (상가 좌표 정보)
 # ---------------------------------------------------------------------------
 
 class SemasStoreClient:
-    BASE = "https://apis.data.go.kr/B553077/api/open/sdsc2"
+    BASE_URL = "https://apis.data.go.kr/B553077/api/open/sdsc2"
     PAGE_SIZE = 1000
     NAIL_SHOP_CODE = "S20703" # 추후 다른 업종으로 확장 시 dict로 모든 코드 저장 후 조회 예정
 
@@ -51,7 +51,7 @@ class SemasStoreClient:
             **params # 여러 키워드 인자를 dict로 수령
         }
 
-        res = self.s.get(f"{self.BASE}/{endpoint}", params=params, timeout=30)
+        res = self.s.get(f"{self.BASE_URL}/{endpoint}", params=params, timeout=30)
         res.raise_for_status()
 
         try:
@@ -102,6 +102,12 @@ class SemasStoreClient:
 # ---------------------------------------------------------------------------
 # 2) 서울 열린데이터광장 상권분석서비스 API (상권 매출, 수, 유동인구 등 집계)
 # ---------------------------------------------------------------------------
+class SeoulOpenApiClient:
+    BASE_URL = "http://openapi.seoul.go.kr:8088"
+    PAGE_SIZE = 1000
 
+    def __init__(self, api_key:str, session:requests.Session | None = None):
+        self.key = api_key
+        self.s = session or build_session()
 
 
