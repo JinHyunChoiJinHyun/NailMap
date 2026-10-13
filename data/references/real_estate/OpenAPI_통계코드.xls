@@ -1,0 +1,6162 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	
+		
+		
+			
+		
+		
+		
+
+		
+
+		
+
+		
+	
+	
+</head>
+<body>
+
+
+
+
+
+
+	
+	
+	
+		<!-- OpenAPI_통계코드 -->
+			<table style="width: 1100px;border:1px solid #000000;">
+			<colgroup>
+				<col style="width:100px;">
+				<col style="width:300px;">
+				<col style="width:200px;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th align="center" bgcolor='#CEFBC9' style='border:1px solid #d3d3d3;'>번호</th>
+					<th align="center" bgcolor='#CEFBC9' style='border:1px solid #d3d3d3;'>통계표명</th>
+					<th align="center" bgcolor='#CEFBC9' style='border:1px solid #d3d3d3;'>통계표코드</th>
+				</tr>
+			</thead>
+			<tfoot></tfoot>
+			<tbody>
+				
+				
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>1</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 지역별 지가지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00900</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>2</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 용도지역별 지가지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T253233138851223</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>3</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 이용상황별 지가지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T251683138861068</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>4</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 지가지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00901</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>5</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 용도지역별 지가지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00003</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>6</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 이용상황별 지가지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00004</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>7</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 지역별 지가변동률</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00902</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>8</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 용도지역별 지가변동률</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T257803138871680</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>9</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 이용상황별 지가변동률</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T254153138841315</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>10</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 지가변동률</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00903</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>11</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 용도지역별 지가변동률</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00007</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>12</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 이용상황별 지가변동률</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00008</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>13</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>고속철도 역세권 지가지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00009</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>14</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>지하철 역세권 지가지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00010</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>15</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>주요정책사업(혁신도시) 지가지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00011</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>16</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>국가산업단지 지가지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00012</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>17</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>농지 지가지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00013</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>18</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>실질 지가지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00014</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>19</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>개발사업(3기신도시) 지가지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00015</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>20</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>인구감소지역 지가지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T245113133421365</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>21</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매매가격지수_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00016</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>22</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 계절조정 매매가격지수_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00017</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>23</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 전월세통합지수_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00018</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>24</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 전세가격지수_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00019</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>25</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 계절조정 전세가격지수_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00020</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>26</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 월세통합가격지수_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00021</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>27</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 월세가격지수_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00022</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>28</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 준월세가격지수_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00023</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>29</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 준전세가격지수_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00024</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>30</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균매매가격_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00025</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>31</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균단위매매가격_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00026</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>32</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위매매가격_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00027</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>33</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위단위매매가격_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00028</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>34</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균전세가격_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00029</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>35</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균단위전세가격_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00030</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>36</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위전세가격_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00031</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>37</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위단위전세가격_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00032</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>38</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균월세보증금_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00033</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>39</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균월세가격_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00034</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>40</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위월세보증금_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00035</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>41</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위월세가격_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00036</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>42</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균 매매가격 대비 전세가격_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00037</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>43</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위 매매가격 대비 전세가격_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00038</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>44</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균 전세가격 대비 보증금_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00039</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>45</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위 전세가격 대비 보증금_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00040</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>46</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매매수급동향_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00041</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>47</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 전세수급동향_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00042</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>48</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 월세수급동향_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00043</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>49</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 5분위배율_주택종합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00044</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>50</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매매가격지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00045</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>51</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 매매가격지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T248413131622531</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>52</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 연령별 매매가격지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T245383131632416</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>53</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 계절조정 매매가격지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00048</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>54</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 전월세통합지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00049</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>55</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 전세가격지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00050</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>56</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 전세가격지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T241913131645021</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>57</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 연령별 전세가격지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T248033131653950</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>58</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 계절조정 전세가격지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00053</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>59</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 월세통합가격지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00054</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>60</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 월세가격지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00055</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>61</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 준월세가격지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00056</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>62</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 준전세가격지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00057</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>63</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 월세가격지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T244963131668796</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>64</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 연령별 월세가격지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T242863131674049</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>65</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균매매가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00060</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>66</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균단위매매가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00061</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>67</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위매매가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00062</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>68</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위단위매매가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00063</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>69</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균전세가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00064</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>70</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균단위전세가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00065</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>71</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위전세가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00066</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>72</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위단위전세가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00067</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>73</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균월세보증금_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00068</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>74</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균월세가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00069</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>75</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위월세보증금_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00070</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>76</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위월세가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00071</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>77</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균 매매가격 대비 전세가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00072</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>78</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위 매매가격 대비 전세가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00073</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>79</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균 전세가격 대비 보증금_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00074</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>80</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위 전세가격 대비 보증금_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00075</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>81</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매매수급동향_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00076</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>82</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 전세수급동향_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00077</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>83</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 월세수급동향_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00078</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>84</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 5분위배율_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00079</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>85</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매매가격지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00080</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>86</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 매매가격지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T243553131687433</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>87</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 연령별 매매가격지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T244883131695465</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>88</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 계절조정 매매가격지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00083</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>89</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 전월세통합지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00084</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>90</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 전세가격지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00085</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>91</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 전세가격지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T243333131707624</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>92</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 연령별 전세가격지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T241473131711498</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>93</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 계절조정 전세가격지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00088</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>94</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 월세통합가격지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00089</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>95</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 월세가격지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00090</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>96</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 준월세가격지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00091</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>97</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 준전세가격지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00092</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>98</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 월세가격지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T243363131726437</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>99</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 연령별 월세가격지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T247843131734944</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>100</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균매매가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00095</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>101</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균단위매매가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00096</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>102</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위매매가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00097</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>103</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위단위매매가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00098</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>104</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균전세가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00099</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>105</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균단위전세가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00100</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>106</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위전세가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00101</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>107</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위단위전세가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00102</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>108</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균월세보증금_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00103</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>109</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균월세가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00104</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>110</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위월세보증금_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00105</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>111</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위월세가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00106</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>112</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균 매매가격 대비 전세가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00107</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>113</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위 매매가격 대비 전세가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00108</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>114</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균 전세가격 대비 보증금_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00109</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>115</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위 전세가격 대비 보증금_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00110</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>116</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매매수급동향_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00111</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>117</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 전세수급동향_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00112</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>118</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 월세수급동향_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00113</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>119</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매매가격지수_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00114</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>120</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 매매가격지수_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T248433131744317</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>121</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 연령별 매매가격지수_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T244363131751191</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>122</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 계절조정 매매가격지수_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00117</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>123</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 전월세통합지수_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00118</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>124</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 전세가격지수_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00119</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>125</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 전세가격지수_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T244613131767485</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>126</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 연령별 전세가격지수_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T249143131777728</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>127</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 계절조정 전세가격지수_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00122</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>128</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 월세통합가격지수_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00123</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>129</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 월세가격지수_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00124</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>130</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 준월세가격지수_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00125</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>131</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 준전세가격지수_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00126</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>132</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 연령별 월세가격지수_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T247893131787876</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>133</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균매매가격_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00128</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>134</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균단위매매가격_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00129</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>135</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위매매가격_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00130</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>136</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위단위매매가격_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00131</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>137</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균전세가격_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00132</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>138</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균단위전세가격_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00133</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>139</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위전세가격_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00134</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>140</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위단위전세가격_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00135</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>141</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균월세보증금_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00136</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>142</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균월세가격_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00137</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>143</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위월세보증금_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00138</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>144</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위월세가격_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00139</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>145</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균 매매가격 대비 전세가격_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00140</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>146</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위 매매가격 대비 전세가격_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00141</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>147</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 평균 전세가격 대비 보증금_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00142</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>148</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 중위 전세가격 대비 보증금_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00143</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>149</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매매수급동향_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00144</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>150</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 전세수급동향_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00145</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>151</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 월세수급동향_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00146</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>152</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>지역별 전월세 전환율_종합주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00155</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>153</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>지역별 전월세 전환율_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00156</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>154</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>지역별 전월세 전환율_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00157</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>155</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>지역별 전월세 전환율_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00158</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>156</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>규모별 전월세 전환율_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00159</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>157</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>규모별 전월세 전환율_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00160</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>158</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>규모별 전월세 전환율_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00161</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>159</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(주) 매매가격지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T244183132827305</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>160</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(주) 규모별 매매가격지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T242143133025413</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>161</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(주) 연령별 매매가격지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T247243133036080</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>162</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(주) 전세가격지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T247713133046872</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>163</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(주) 규모별 전세가격지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T244283133053897</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>164</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(주) 연령별 전세가격지수</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T247043133061837</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>165</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(주) 매매수급동향</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T248163133074619</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>166</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(주) 전세수급동향</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T245423133086632</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>167</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>주택유형별 월세가격지수(구)_전체</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00163</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>168</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>주택유형별 월세가격지수(구)_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00164</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>169</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>주택유형별 월세가격지수(구)_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00165</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>170</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>주택유형별 월세가격지수(구)_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00166</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>171</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>주택유형별 월세가격지수(구)_오피스텔</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00167</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>172</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>규모별 월세가격지수(구)_전체</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T241283131791053</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>173</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>규모별 월세가격지수(구)_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T244553131809034</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>174</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>규모별 월세가격지수(구)_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T249693131811473</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>175</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>규모별 월세가격지수(구)_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T246363131823916</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>176</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>규모별 월세가격지수(구)_오피스텔</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T247463131835671</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>177</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>지역별 월세가격지수(구)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00162</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>178</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>월세이율(~14.12)(구)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T248493131844741</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>179</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>지역별 수급동향(구)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T242093131851096</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>180</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>지역별 거래동향(구)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00175</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>181</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 매매지수_공동주택통합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00176</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>182</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 매매지수(계절조정)_공동주택통합</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00177</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>183</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 매매지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00178</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>184</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 매매지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T247493131863202</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>185</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(분기) 시군구별 매매지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00180</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>186</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 매매지수(계절조정)_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00181</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>187</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 전세지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00182</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>188</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 전세지수_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T247783131877418</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>189</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 전세지수(계절조정)_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00184</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>190</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 매매지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00185</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>191</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 매매지수_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00186</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>192</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 매매지수(계절조정)_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00187</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>193</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 매매 평균가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00188</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>194</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 매매 중위가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00189</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>195</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 매매 평균가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T247223131886356</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>196</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 매매 중위가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T248453131892511</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>197</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 전세 평균가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00192</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>198</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 전세 중위가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00193</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>199</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 전세 평균가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00613</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>200</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 전세 중위가격_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00614</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>201</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 매매 평균가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00196</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>202</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지역별 매매 중위가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00197</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>203</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 매매 평균가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00198</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>204</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 규모별 매매 중위가격_연립/다세대</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00199</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>205</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>외국인주택소유현황(총괄)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00200</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>206</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>소유인수별 외국인주택소유현황_공동주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00202</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>207</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>소유인수별 외국인주택소유현황_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00203</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>208</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>주택유형별 외국인주택소유현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00201</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>209</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>지역별 외국인주택소유현황_공동주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00204</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>210</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>지역별 외국인주택소유현황_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00205</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>211</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>국적별 외국인주택소유현황_공동주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00206</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>212</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>국적별 외국인주택소유현황_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00207</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>213</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>주택수별 외국인소유자현황(전체)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00208</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>214</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>주택수별 외국인소유자현황(지분반영)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00209</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>215</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(시계열)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>TT244963134453269</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>216</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(시계열)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>TT248473134635539</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>217</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(시계열)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>TT246323134644307</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>218</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(시계열)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>TT247193134654396</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>219</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(시계열)_통합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>TT249683134828248</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>220</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2024년3분기~)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>TT244233134228593</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>221</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2024년3분기~)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T249863134832916</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>222</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2024년3분기~)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T241273134677393</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>223</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2024년3분기~)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T242433134965708</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>224</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2024년3분기~)_통합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T242963134993964</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>225</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2022년~)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00234</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>226</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2022년~)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00235</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>227</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2022년~)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00236</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>228</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2022년~)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00237</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>229</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2022년~)_통합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T244933133627387</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>230</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2021년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00230</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>231</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2021년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00231</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>232</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2021년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00232</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>233</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2021년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00233</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>234</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2020년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00226</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>235</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2020년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00227</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>236</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2020년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00228</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>237</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2020년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00229</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>238</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2019년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00222</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>239</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2019년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00223</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>240</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2019년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00224</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>241</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2019년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00225</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>242</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2017년~2018년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00218</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>243</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2017년~2018년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00219</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>244</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2017년~2018년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00220</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>245</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2017년~2018년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00221</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>246</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2013년~2016년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00214</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>247</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2013년~2016년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00215</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>248</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2013년~2016년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00216</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>249</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대가격지수(2013년~2016년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00217</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>250</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2024년3분기~)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>TT244763134428698</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>251</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2024년3분기~)_일반 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T262303140824764</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>252</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2024년3분기~)_일반 상가(1층)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T268603140832693</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>253</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2024년3분기~)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T249633134845544</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>254</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2024년3분기~)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T241833134686576</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>255</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2024년3분기~)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T243283134931290</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>256</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2022년~)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00253</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>257</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2022년~)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00254</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>258</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2022년~)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00255</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>259</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2022년~)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00256</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>260</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2021년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00250</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>261</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2021년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00251</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>262</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2021년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00252</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>263</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2020년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00247</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>264</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2020년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00248</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>265</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2020년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00249</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>266</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2019년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00244</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>267</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2019년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00245</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>268</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2019년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00246</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>269</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2017년~2018년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00241</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>270</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2017년~2018년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00242</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>271</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2017년~2018년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00243</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>272</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2013년~2016년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00238</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>273</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2013년~2016년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00239</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>274</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2013년~2016년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00240</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>275</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2002년~2012년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00678</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>276</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 공실률(2002년~2012년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00679</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>277</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2024년3분기~)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>TT249843134237374</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>278</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2024년3분기~)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T244363134858603</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>279</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2024년3분기~)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T248223134698125</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>280</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2024년3분기~)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T244913134948657</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>281</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2022년~)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00277</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>282</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2022년~)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00278</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>283</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2022년~)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00279</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>284</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2022년~)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00280</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>285</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2021년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00273</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>286</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2021년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00274</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>287</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2021년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00275</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>288</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2021년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00276</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>289</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2020년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00269</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>290</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2020년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00270</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>291</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2020년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00271</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>292</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2020년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00272</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>293</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2019년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00265</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>294</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2019년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00266</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>295</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2019년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00267</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>296</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2019년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00268</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>297</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2017년~2018년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00261</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>298</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2017년~2018년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00262</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>299</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2017년~2018년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00263</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>300</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2017년~2018년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00264</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>301</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2013년~2016년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00257</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>302</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2013년~2016년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00258</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>303</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2013년~2016년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00259</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>304</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2013년~2016년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00260</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>305</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2002년~2012년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00680</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>306</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 임대료(2002년~2012년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00681</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>307</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2024년3분기~)_오피스_전체</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>TT242293134242089</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>308</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2024년3분기~)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T241873134863890</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>309</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2024년3분기~)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T246233134891629</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>310</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2024년3분기~)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T249023134703697</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>311</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2022년~)_오피스_전체</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00314</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>312</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2022년~)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00317</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>313</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2022년~)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00318</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>314</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2022년~)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00319</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>315</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2021년)_오피스_전체</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00308</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>316</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2021년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00311</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>317</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2021년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00312</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>318</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2021년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00313</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>319</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2020년)_오피스_전체</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00302</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>320</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2020년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00305</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>321</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2020년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00306</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>322</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2020년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00307</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>323</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2019년)_오피스_전체</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00296</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>324</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2019년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00299</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>325</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2019년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00300</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>326</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2019년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00301</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>327</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2017년~2018년)_오피스_전체</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00290</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>328</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2017년~2018년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00293</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>329</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2017년~2018년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00294</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>330</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2017년~2018년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00295</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>331</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2013년~2016년)_오피스_전체</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00284</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>332</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2013년~2016년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00287</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>333</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2013년~2016년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00288</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>334</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2013년~2016년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00289</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>335</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2002년~2012년)_오피스_10층이하</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00281</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>336</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2002년~2012년)_오피스_11층이상</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00282</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>337</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 층별임대료 및 층별효용비율(2002년~2012년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00283</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>338</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2024년3분기~)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>TT243613134435838</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>339</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2024년3분기~)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T241883134877452</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>340</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2024년3분기~)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T246253134905233</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>341</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2024년3분기~)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T243133134985812</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>342</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2022년~)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00342</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>343</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2022년~)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00343</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>344</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2022년~)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00344</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>345</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2022년~)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00345</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>346</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2021년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00338</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>347</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2021년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00339</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>348</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2021년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00340</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>349</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2021년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00341</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>350</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2020년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00334</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>351</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2020년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00335</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>352</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2020년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00336</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>353</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2020년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00337</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>354</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2019년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00330</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>355</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2019년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00331</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>356</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2019년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00332</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>357</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2019년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00333</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>358</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2017년~2018년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00326</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>359</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2017년~2018년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00327</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>360</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2017년~2018년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00328</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>361</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2017년~2018년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00329</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>362</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2013년~2016년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00322</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>363</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2013년~2016년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00323</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>364</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2013년~2016년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00324</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>365</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2013년~2016년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00325</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>366</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2002년~2012년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00320</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>367</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 지역별 전환율(2002년~2012년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00321</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>368</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2024년3분기~)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T245883135037859</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>369</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2024년3분기~)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T242083134887473</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>370</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2024년3분기~)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T246253134913401</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>371</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2024년3분기~)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T246393134978815</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>372</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2022년~)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00366</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>373</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2022년~)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00367</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>374</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2022년~)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00368</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>375</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2022년~)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00369</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>376</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2021년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00362</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>377</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2021년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00363</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>378</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2021년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00364</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>379</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2021년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00365</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>380</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2020년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00358</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>381</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2020년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00359</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>382</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2020년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00360</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>383</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2020년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00361</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>384</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2019년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00354</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>385</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2019년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00355</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>386</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2019년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00356</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>387</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2019년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00357</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>388</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2017년~2018년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00350</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>389</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2017년~2018년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00351</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>390</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2017년~2018년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00352</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>391</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2017년~2018년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00353</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>392</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2013년~2016년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00346</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>393</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2013년~2016년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00347</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>394</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2013년~2016년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00348</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>395</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 수익률(분기)(2013년~2016년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00349</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>396</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 투자수익률(분기/연간)(2002년~2012년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00682</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>397</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 투자수익률(분기/연간)(2002년~2012년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00683</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>398</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2024년~)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>TT242303134253883</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>399</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2024년~)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T248383134665433</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>400</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2024년~)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T248663134928155</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>401</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2024년~)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T243693134953154</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>402</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2022년~)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00438</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>403</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2022년~)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00439</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>404</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2022년~)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00440</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>405</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2022년~)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00441</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>406</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2021년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00434</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>407</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2021년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00435</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>408</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2021년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00436</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>409</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2021년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00437</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>410</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2020년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00430</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>411</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2020년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00431</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>412</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2020년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00432</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>413</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2020년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00433</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>414</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2019년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00426</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>415</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2019년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00427</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>416</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2019년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00428</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>417</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2019년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00429</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>418</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2017년~2018년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00422</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>419</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2017년~2018년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00423</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>420</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2017년~2018년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00424</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>421</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2017년~2018년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00425</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>422</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2013년~2016년)_오피스</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00418</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>423</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2013년~2016년)_중대형 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00419</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>424</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2013년~2016년)_소규모 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00420</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>425</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>임대동향 순영업소득(2013년~2016년)_집합 상가</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00421</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>426</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>시도별/업종별 상가권리금(2022년~)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00445</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>427</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>시도별/업종별 상가권리금(2021년)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00444</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>428</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>시도별/업종별 상가권리금(2020년)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00443</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>429</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>시도별/업종별 상가권리금(2015년~2019년)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00442</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>430</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 매매가격지수(시계열)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00615</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>431</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 규모별 매매가격지수(2024년1월~)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T244523133223976</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>432</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 규모별 매매가격지수(2020년7월~2023년12월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00616</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>433</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 규모별 매매가격지수(2018년~2020년6월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00617</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>434</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 전세가격지수(시계열)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00618</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>435</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 규모별 전세가격지수(2024년1월~)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T242403133236554</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>436</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 규모별 전세가격지수(2020년7월~2023년12월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00619</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>437</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 규모별 전세가격지수(2018년~2020년6월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00620</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>438</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 월세가격지수(시계열)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00621</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>439</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 규모별 월세가격지수(2024년1월~)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T248783133246653</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>440</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 규모별 월세가격지수(2020년7월~2023년12월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00622</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>441</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 규모별 월세가격지수(2018년~2020년6월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00623</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>442</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 매매가격(2024년1월~)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T241773133446051</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>443</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 매매가격(2020년 7월~2023년12월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00624</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>444</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 매매가격(2018년~2020년6월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00625</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>445</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 전세가격(2024년1월~)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T247903133465270</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>446</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 전세가격(2020년7월~2023년12월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00626</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>447</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 전세가격(2018년~2020년6월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00627</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>448</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 월세가격(2024년1월~)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T248193133484912</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>449</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 월세가격(2020년7월~2023년12월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00628</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>450</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 월세가격(2018년~2020년6월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00629</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>451</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 매매가격 대비 전세가격(2024년1월~)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T247423133502115</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>452</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 매매가격 대비 전세가격(2020년7월~2023년12월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00630</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>453</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 매매가격 대비 전세가격(2018년~2020년6월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00631</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>454</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 전세가격 대비 월세보증금(2024년1월~)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T242783133522622</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>455</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 전세가격 대비 월세보증금(2020년7월~2023년12월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00632</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>456</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 전세가격 대비 월세보증금(2018년~2020년6월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00633</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>457</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 전월세전환율(2024년1월~)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T241163133546529</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>458</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 전월세전환율(2020년7월~2023년12월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00634</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>459</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 전월세전환율(2018년~2020년6월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00635</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>460</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 수익률(2024년1월~)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T245503133561624</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>461</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 수익률(2020년7월~2023년12월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00636</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>462</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 오피스텔 수익률(2018년~2020년6월)</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00637</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>463</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지거래현황_용도지역별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00638</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>464</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지거래현황_지목별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00639</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>465</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지거래현황_매입자거주지별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00640</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>466</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지거래현황_거래주체별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00641</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>467</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지거래현황_거래규모별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00642</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>468</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지거래현황_거래원인별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00643</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>469</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지거래현황_건물용도별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00644</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>470</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지거래현황_토지거래허가처리별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00645</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>471</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지거래현황_외국인거래</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00646</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>472</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지거래현황_신탁/신탁해지</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00647</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>473</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 행정구역별 토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00531</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>474</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 행정구역별 토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00532</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>475</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 용도지역별 토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00648</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>476</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지목별 토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00649</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>477</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매입자거주지별 토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00650</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>478</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래주체별 토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00651</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>479</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래규모별 토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00652</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>480</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래원인별 토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00653</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>481</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 건물용도별 토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00654</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>482</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 토지거래허가처리별 토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00655</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>483</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 외국인 거래 토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00533</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>484</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매입자국적별 토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T251163137835559</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>485</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 신탁/신탁해지 토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00534</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>486</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지매매거래현황_용도지역별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00656</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>487</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지매매거래현황_지목별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00657</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>488</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지매매거래현황_매입자거주지별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00658</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>489</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지매매거래현황_거래주체별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00659</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>490</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 토지매매거래현황_거래규모별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00660</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>491</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 행정구역별 토지매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00535</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>492</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 행정구역별 토지매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00536</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>493</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 용도지역별 토지매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00661</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>494</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지목별 토지매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00662</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>495</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매입자거주지별 토지매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00663</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>496</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래주체별 토지매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00664</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>497</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래규모별 토지매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00665</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>498</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매입자연령대별 토지매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T255583137857789</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>499</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매도자연령대별 토지매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T257523137863487</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>500</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 순수토지거래현황_용도지역별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00666</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>501</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 순수토지거래현황_지목별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00667</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>502</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 순수토지거래현황_매입자거주지별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00668</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>503</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 순수토지거래현황_거래주체별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00669</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>504</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 순수토지거래현황_거래규모별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00670</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>505</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 순수토지거래현황_거래원인별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00671</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>506</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 순수토지거래현황_토지거래허가처리별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00672</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>507</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 순수토지거래현황_외국인거래</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00673</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>508</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 순수토지거래현황_신탁/신탁해지</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00674</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>509</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 행정구역별 순수토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00537</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>510</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 행정구역별 순수토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00538</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>511</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 용도지역별 순수토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00675</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>512</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지목별 순수토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00555</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>513</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매입자거주지별 순수토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00556</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>514</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래주체별 순수토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00557</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>515</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래규모별 순수토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00558</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>516</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래원인별 순수토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00559</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>517</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 토지거래허가처리별 순수토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00560</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>518</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 외국인 거래 순수토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00539</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>519</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 신탁/신탁해지 순수토지거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00540</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>520</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 건축물거래현황_용도지역별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00561</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>521</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 건축물거래현황_지목별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00562</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>522</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 건축물거래현황_매입자거주지별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00563</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>523</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 건축물거래현황_거래주체별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00564</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>524</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 건축물거래현황_거래규모별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00565</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>525</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 건축물거래현황_거래원인별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00566</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>526</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 건축물거래현황_건물용도별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00567</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>527</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 건축물거래현황_외국인거래</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00568</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>528</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 건축물거래현황_신탁/신탁해지</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00569</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>529</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 행정구역별 건축물거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00541</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>530</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 행정구역별 건축물거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00542</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>531</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 용도지역별 건축물거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00570</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>532</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 지목별 건축물거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00571</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>533</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매입자거주지별 건축물거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00572</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>534</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래주체별 건축물거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00573</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>535</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래규모별 건축물거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00574</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>536</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래원인별 건축물거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00575</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>537</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 건물용도별 건축물거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00576</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>538</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 외국인거래 건축물거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00543</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>539</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 신탁/신탁해지 건축물거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00544</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>540</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 주택거래현황_매입자거주지별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00577</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>541</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 주택거래현황_거래주체별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00578</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>542</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 주택거래현황_거래규모별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00579</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>543</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 주택거래현황_거래원인별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00580</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>544</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 주택거래현황_주택유형별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00581</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>545</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 주택거래현황_신탁/신탁해지</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00582</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>546</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 행정구역별 주택거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00545</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>547</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 행정구역별 주택거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00546</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>548</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매입자거주지별 주택거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00583</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>549</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래주체별 주택거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00584</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>550</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래규모별 주택거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00585</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>551</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래원인별 주택거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00586</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>552</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 주택유형별 주택거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00587</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>553</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 신탁/신탁해지 주택거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00547</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>554</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 아파트거래현황_매입자거주지별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00588</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>555</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 아파트거래현황_거래주체별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00589</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>556</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 아파트거래현황_거래규모별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00590</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>557</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 아파트거래현황_거래원인별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00591</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>558</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 아파트거래현황_신탁/신탁해지</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00592</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>559</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 행정구역별 아파트거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00548</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>560</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 행정구역별 아파트거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00549</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>561</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매입자거주지별 아파트거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00593</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>562</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래주체별 아파트거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00594</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>563</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래규모별 아파트거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00595</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>564</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래원인별 아파트거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00596</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>565</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 신탁/신탁해지 아파트거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00550</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>566</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 주택매매거래현황_매입자거주지별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00597</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>567</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 주택매매거래현황_매입자연령대별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00676</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>568</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 주택매매거래현황_거래주체별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00598</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>569</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 주택매매거래현황_거래규모별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00599</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>570</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 주택매매거래현황_주택유형별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00600</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>571</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 행정구역별 주택매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00551</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>572</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 행정구역별 주택매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00552</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>573</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매입자거주지별 주택매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00601</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>574</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매입자연령대별 주택매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00602</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>575</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매도자연령대별 주택매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T259953137644623</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>576</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래주체별 주택매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00603</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>577</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래규모별 주택매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00604</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>578</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 주택유형별 주택매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00605</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>579</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 아파트매매거래현황_매입자거주지별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00606</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>580</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 아파트매매거래현황_매입자연령대별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00677</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>581</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 아파트매매거래현황_거래주체별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00607</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>582</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 세부항목 아파트매매거래현황_거래규모별</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00608</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>583</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(연) 행정구역별 아파트매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00553</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>584</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 행정구역별 아파트매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00554</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>585</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매입자거주지별 아파트매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00609</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>586</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매입자연령대별 아파트매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00610</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>587</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 매도자연령대별 아파트매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>T259543137655479</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>588</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래주체별 아파트매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00611</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>589</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>(월) 거래규모별 아파트매매거래현황</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00612</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>590</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_전체</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00904</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>591</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00487</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>592</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_공동주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00488</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>593</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_제1종근린생활시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00489</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>594</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_제2종근린생활시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00490</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>595</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_문화및집회시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00491</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>596</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_종교시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00492</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>597</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_판매시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00493</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>598</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_운수시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00494</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>599</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_의료시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00495</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>600</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_교육연구시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00496</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>601</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_노유자시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00497</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>602</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_수련시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00498</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>603</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_운동시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00499</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>604</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_업무시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00500</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>605</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_숙박시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00501</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>606</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_위락시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00502</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>607</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_공장</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00503</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>608</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_창고시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00504</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>609</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_위험물저장및처리시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00505</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>610</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_자동차관련시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00506</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>611</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_동식물관련시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00507</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>612</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_자원순환관련시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00508</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>613</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_교정및군사시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00509</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>614</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_방송통신시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00510</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>615</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_발전시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00511</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>616</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_묘지관련시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00512</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>617</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_관광휴게시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00513</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>618</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_장례식장</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00514</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>619</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_야영장시설</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00515</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>620</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 주용도별_기타</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00516</td>
+						</tr>
+						
+					
+				
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>621</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 세부용도별_전체</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00517</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>622</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 세부용도별_단독주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00518</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>623</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 세부용도별_다중주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00519</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>624</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 세부용도별_다가구주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00520</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>625</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 세부용도별_아파트</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00521</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>626</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 세부용도별_연립주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00522</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>627</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 세부용도별_다세대주택</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00523</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>628</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 세부용도별_소매점</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00524</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>629</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 세부용도별_일반음식점</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00525</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>630</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 세부용도별_상점</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00526</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>631</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 세부용도별_종합병원</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00527</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>632</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 세부용도별_대학교</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00528</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>633</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 세부용도별_사무소</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00529</td>
+						</tr>
+						
+					
+				
+					
+						<tr>
+							<td style='text-align:center;border:1px solid #d3d3d3;'>634</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>건물에너지사용량통계 세부용도별_여관</td>
+							<td style='text-align:left;border:1px solid #d3d3d3;'>A_2024_00530</td>
+						</tr>
+						
+					
+				
+
+			</tbody>
+		</table>
+	
+
+
+
+
+	
+
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+</body>
+</html>

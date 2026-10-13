@@ -1,4 +1,6 @@
 # 수집 계층 - API를 호출에 DataFrame을 반환
+from dataclasses import dataclass
+
 import logging
 import requests
 import time
@@ -11,6 +13,7 @@ import pandas as pd
 log = logging.getLogger("collector")
 
 SEOUL_CODE = "11"
+NAIL_KEYWORD = "네일"
 
 # ---------------------------------------------------------------------------
 # 공통 HTTP 세션 (재시도 + 타임아웃)
@@ -22,17 +25,25 @@ def build_session() -> requests.Session:
         status_forcelist=(429,500,502,503,504), # 재시도 대상 HTTP 상태 코드
         allowed_methods=("GET",),
     )
-    s = requests.Session() # HTTP 통신 세션 객체 생성
-    s.mount("https://", HTTPAdapter(max_retries=retry))
-    s.mount("http://", HTTPAdapter(max_retries=retry))
-    return s
+    session = requests.Session() # HTTP 통신 세션 객체 생성
+    session.mount("https://", HTTPAdapter(max_retries=retry))
+    session.mount("http://", HTTPAdapter(max_retries=retry))
+    return session
+
+def request_json(session:requests.Session, url:str, params:dict | None = None, label:str = "") -> dict:
+    res = session.get(url, params=params, timeout=60)
+    res.raise_for_status
+    try:
+        return res.json()
+    except ValueError:
+        raise ApiError(f"[{label}] JSON 형식이 아닙니다: {res.text[:300]}")
 
 # 입력된 오류 발생
 class ApiError(RuntimeError):
     pass
 
 # ---------------------------------------------------------------------------
-# 1) SEMAS (소상공인시장진흥공단) 상가 정보 API (상가 좌표 정보)
+# 1) SEMAS (소상공인시장진흥공단) 상가 정보 API (업소 목록, 업종 분류, 좌표 등)
 # ---------------------------------------------------------------------------
 
 class SemasStoreClient:
@@ -40,24 +51,20 @@ class SemasStoreClient:
     PAGE_SIZE = 1000
     NAIL_SHOP_CODE = "S20703" # 추후 다른 업종으로 확장 시 dict로 모든 코드 저장 후 조회 예정
 
-    def __init__(self, service_key:str, session: requests.Session | None = None):
-        self.key = service_key
-        self.s = session or build_session() # 하나의 세션을 재사용하거나 새로 생성
+    def __init__(self, api_key:str, session: requests.Session | None = None):
+        self.key = api_key
+        self.session = session or build_session() # 하나의 세션을 재사용하거나 새로 생성
 
     def _get(self, endpoint:str, **params:Any) -> dict:
+        # 요청
         params = {
             "serviceKey": self.key,
             "type": "json",
             **params # 여러 키워드 인자를 dict로 수령
         }
+        url = f"{self.BASE_URL}/{endpoint}"
 
-        res = self.s.get(f"{self.BASE_URL}/{endpoint}", params=params, timeout=30)
-        res.raise_for_status()
-
-        try:
-            data = res.json()
-        except ValueError:
-            raise ApiError(f"[{endpoint}] JSON 형식이 아닙니다: {res.text[:300]}")
+        data = request_json(self.session, url, params, endpoint)
 
         # 상태 코드 조회
         header = data.get("header", {})
@@ -73,25 +80,25 @@ class SemasStoreClient:
 
         return data.get("body", {})
 
-    def iter_stores(self, div_id:str, key:str, **filters:str) -> Iterator[dict]:
-        page = 1
+    def fetch_all_rows(self, div_id:str, key:str, **filters:str) -> pd.DataFrame:
+        rows, page = [], 1
         while True:
             body = self._get("storeListInDong", div_id=div_id, key=key,pageNo=page,
                              numOfRows=self.PAGE_SIZE, **filters)
-            items = body.get("items", [])
-            yield from items # 요소를 하나하나씩 반환
+            rows += body.get("items", [])
             totalCount = int(body.get("totalCount", 0))
 
             # 페이지의 모든 항목을 조회했거나 더 이상 조회할 항목이 없으면 반복 종료
-            if page * self.PAGE_SIZE >- totalCount or not items:
+            if page * self.PAGE_SIZE >= totalCount:
                 break
 
             page += 1
             time.sleep(0.2)
+        return pd.DataFrame(rows)
 
     def fetch_seoul_nail_shop(self) -> pd.DataFrame:
-        rows = list(self.iter_stores("ctprvnCd", SEOUL_CODE, indsSclsCd=self.NAIL_SHOP_CODE))
-        df = pd.DataFrame(rows)
+        # rows = list(self.iter_stores("ctprvnCd", SEOUL_CODE, indsSclsCd=self.NAIL_SHOP_CODE))
+        df = self.fetch_all_rows("ctprvnCd", SEOUL_CODE, indsSclsCd=self.NAIL_SHOP_CODE)
         if df.empty:
             return df
         df["lon"] = pd.to_numeric(df["lon"], errors="coerce")
@@ -100,14 +107,172 @@ class SemasStoreClient:
         return df.drop_duplicates("bizesId").reset_index(drop=True)
 
 # ---------------------------------------------------------------------------
-# 2) 서울 열린데이터광장 상권분석서비스 API (상권 매출, 수, 유동인구 등 집계)
+# 2) 서울 열린데이터광장 상권분석서비스 API (추정 매출, 유동·상주·직장인구, 점포 수, 개·폐업 등)
 # ---------------------------------------------------------------------------
+@dataclass(frozen=True)
+class SeoulDataset:
+    name:str
+    endpoint: str
+    quarterly: bool
+    nail_only: bool
+
+SEOUL_DATASETS = [
+    # ── 공간 경계 ─────────────────────────────────────────────────────────────
+    # SeoulDataset("trdar_area",      "TbgisTrdarRelm",         quarterly=False, nail_only=False),  # 영역-상권 (상권 경계·좌표)
+
+    # ── 행정동 단위: 서울 전체를 빈틈없이 비교하는 기본 단위 ──────────────────
+    SeoulDataset("adstrd_sales",    "VwsmAdstrdSelngW",       quarterly=True,  nail_only=True),   # 추정매출-행정동
+    SeoulDataset("adstrd_stores",   "VwsmAdstrdStorW",        quarterly=True,  nail_only=True),   # 점포-행정동 (점포수·개폐업·프랜차이즈)
+    SeoulDataset("adstrd_flpop",    "VwsmAdstrdFlpopW",       quarterly=True,  nail_only=False),  # 길단위인구-행정동
+    SeoulDataset("adstrd_repop",    "VwsmAdstrdRepopW",       quarterly=True,  nail_only=False),  # 상주인구-행정동
+    SeoulDataset("adstrd_wrcpop",   "VwsmAdstrdWrcPopltnW",   quarterly=True,  nail_only=False),  # 직장인구-행정동
+    SeoulDataset("adstrd_income",   "VwsmAdstrdNcmCnsmpW",    quarterly=True,  nail_only=False),  # 소득소비-행정동
+    SeoulDataset("adstrd_fclty",    "VwsmAdstrdFcltyW",       quarterly=True,  nail_only=False),  # 집객시설-행정동
+    SeoulDataset("adstrd_change_ix", "VwsmAdstrdIxQq",        quarterly=True,  nail_only=False),  # 상권변화지표-행정동 (성장/쇠퇴 등급)
+    SeoulDataset("adstrd_apt",       "VwsmAdstrdAptW",        quarterly=True,  nail_only=False),  # 아파트-행정동
+    
+    # ── 상권 단위: 지정 상권이 있는 곳의 상세 분석용 ─────────────────────────
+    # SeoulDataset("trdar_sales",     "VwsmTrdarSelngQq",       quarterly=True,  nail_only=True),   # 추정매출-상권
+    # SeoulDataset("trdar_stores",    "VwsmTrdarStorQq",        quarterly=True,  nail_only=True),   # 점포-상권 (점포수·개폐업·프랜차이즈)
+    # SeoulDataset("trdar_flpop",     "VwsmTrdarFlpopQq",       quarterly=True,  nail_only=False),  # 길단위인구-상권
+    # SeoulDataset("trdar_repop",     "VwsmTrdarRepopQq",       quarterly=True,  nail_only=False),  # 상주인구-상권
+    # SeoulDataset("trdar_wrcpop",    "VwsmTrdarWrcPopltnQq",   quarterly=True,  nail_only=False),  # 직장인구-상권
+    # SeoulDataset("trdar_income",    "VwsmTrdarNcmCnsmpQq",    quarterly=True,  nail_only=False),  # 소득소비-상권
+    # SeoulDataset("trdar_facility",  "VwsmTrdarFcltyQq",       quarterly=True,  nail_only=False),  # 집객시설-상권 (지하철역·대학·백화점 등)
+    # SeoulDataset("trdar_change_ix", "VwsmTrdarIxQq",          quarterly=True,  nail_only=False),  # 상권변화지표-상권 (성장/쇠퇴 등급)
+    # SeoulDataset("trdar_apt",       "InfoTrdarAptQq",         quarterly=True,  nail_only=False),  # 아파트-상권
+]
+
 class SeoulOpenApiClient:
     BASE_URL = "http://openapi.seoul.go.kr:8088"
     PAGE_SIZE = 1000
 
     def __init__(self, api_key:str, session:requests.Session | None = None):
         self.key = api_key
-        self.s = session or build_session()
+        self.session = session or build_session()
+
+    def _get(self, endpoint:str, start:int, end:int, *path_args:str) -> dict:
+        # 요청
+        url = "/".join([self.BASE_URL, self.key, "json", endpoint, str(start), str(end), *path_args])
+        data = request_json(session=self.session, url=url, label=endpoint)
+
+        # 오류 발생 처리
+        if endpoint not in data: # 오류 발생 시 서비스 키워드 없이 RESULT만 반환
+            res = data.get("RESULT", {})
+            # 해당 데이터가 없는 경우
+            if res.get("CODE") == "INFO-200": 
+                return {"list_total_count": 0, "row": []}
+            raise ApiError(f"[{endpoint}] {res.get("CODE")} {res.get("MESSAGE")}")
+
+        # 정상 처리
+        return data[endpoint]
+
+    # API 전체 데이터 조회 함수
+    def fetch_all_rows(self, endpoint:str, *path_args:str) -> pd.DataFrame:
+        rows, start = [], 1
+        while True:
+            body = self._get(endpoint, start, start + self.PAGE_SIZE - 1, *path_args)
+            rows += body.get("row", [])
+            total_count = int(body.get("list_total_count", 0))
+
+            log.info("SEOUL %s %s (%d/%d)", endpoint, "/".join(path_args) or "-", min(start + self.PAGE_SIZE - 1, total_count), total_count)
+
+            # 전체 데이터 조회 완료 시 반복 종료
+            start += self.PAGE_SIZE
+            if start > total_count:
+                break
+            time.sleep(0.1)
+
+        return pd.DataFrame(rows)
+
+    # 데이터 필터링 함수
+    def fetch_dataset(self, dataset:SeoulDataset, quarter:str | None) -> pd.DataFrame:
+        # 분기별 데이터인 경우 분기 파라미터 생성
+        args = (quarter,) if (dataset.quarterly and quarter) else () 
+        df = self.fetch_all_rows(dataset.endpoint, *args)
+
+        # 조회 결과가 없으면 빈 df 반환
+        if df.empty:
+            return df
+
+        # 요청한 분기와 일치하는 데이터만 필터링
+        if dataset.quarterly and quarter and "STDR_YYQU_CD" in df.columns:
+            df = df[df["STDR_YYQU_CD"].astype(str) == quarter]
+
+        # 네일 업종 데이터만 필터링
+        if dataset.nail_only and "SVC_INDUTY_CD_NM" in df.columns:
+            df = df[df["SVC_INDUTY_CD_NM"].str.contains(NAIL_KEYWORD, na=False)]
+
+        # 필터링 데이터 반환
+        return df.reset_index(drop=True)
+
+# ---------------------------------------------------------------------------
+# 3) 한국부동산원 R-ONE 부동산통계 OpenAPI — 상업용부동산 임대동향조사 (임대료, 공실률 등)
+# ---------------------------------------------------------------------------
+"""
+https://www.reb.or.kr/r-one/openapi/SttsApiTblData.do?KEY=76bec874f9d54e76ab413a246506d001&Type=XML&STATBL_ID=T248223134698125&DTACYCLE_CD=QY&pIndex=1&pSize=1000&WRTTIME_IDTFR_ID=202602
+"""
+@dataclass(frozen=True)
+class RealEstateStat:
+    name: str
+    table_id: str
+
+RealEstateStats = [
+    RealEstateStat("real_estate_rent_small", "T248223134698125"), # 소규모 상가 임대료
+    RealEstateStat("real_estate_vacancy_small", "T241833134686576"), # 소규모 상가 공실률
+    RealEstateStat("real_estate_rent_midlarge", "T244363134858603"), # 중대형 상가 임대료
+    RealEstateStat("real_estate_vacancy_midlarge", "T249633134845544"), # 중대형 상가 공실률
+    RealEstateStat("real_estate_rent_aggregate", "T244913134948657"), # 집합 상가 임대료
+    RealEstateStat("real_estate_vacancy_aggregate", "T243283134931290"), # 집합 상가 공실률
+]
+
+class RealEstateClient:
+    BASE_URL = "https://www.reb.or.kr/r-one/openapi"
+    PAGE_SIZE = 1000
+
+    def __init__(self, api_key:str, session: requests.Session | None=None):
+        self.key = api_key
+        self.session = session or build_session()
+
+    def _get(self, endpoint:str, page:int, **params: Any) -> list:
+        # 요청
+        params = {
+            "KEY": self.key,
+            "Type": "json",
+            "pIndex": page,
+            "pSize": self.PAGE_SIZE,
+            **params
+        }
+
+        url = f"{self.BASE_URL}/{endpoint}.do"
+        data = request_json(self.session, url, params, endpoint)
+
+        # 오류 발생 처리
+        if endpoint not in data:
+            res = data.get("RESULT", {}) # 오류 시 RESULT만 반환
+            # 해당 데이터가 없는 경우
+            if res.get("CODE") == "INFO-200":
+                return 0, []
+            raise ApiError(f"[{endpoint}] {res.get("CODE")} {res.get("MESSAGE")}")
+        return data[endpoint]
+
+    def fetch_all_rows(self, endpoint:str, **params:str) -> pd.DataFrame:
+        rows, page = [], 1
+        while True:
+            body = self._get(endpoint, page, **params)
+            rows += body[1]
+
+
+
+
+        
+
+        
+        
+
+
+        
+
+        
 
 
