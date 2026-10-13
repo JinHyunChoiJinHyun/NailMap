@@ -217,7 +217,7 @@ class RealEstateStat:
     name: str
     table_id: str
 
-RealEstateStats = [
+REAL_ESTATE_STATS = [
     RealEstateStat("real_estate_rent_small", "T248223134698125"), # 소규모 상가 임대료
     RealEstateStat("real_estate_vacancy_small", "T241833134686576"), # 소규모 상가 공실률
     RealEstateStat("real_estate_rent_midlarge", "T244363134858603"), # 중대형 상가 임대료
@@ -234,7 +234,7 @@ class RealEstateClient:
         self.key = api_key
         self.session = session or build_session()
 
-    def _get(self, endpoint:str, page:int, **params: Any) -> list:
+    def _get(self, endpoint:str, page:int, **params: Any) -> tuple:
         # 요청
         params = {
             "KEY": self.key,
@@ -254,13 +254,47 @@ class RealEstateClient:
             if res.get("CODE") == "INFO-200":
                 return 0, []
             raise ApiError(f"[{endpoint}] {res.get("CODE")} {res.get("MESSAGE")}")
-        return data[endpoint]
+        head = data[endpoint][0]
+        body = data[endpoint][1]
+        return head.get("head"), body
 
     def fetch_all_rows(self, endpoint:str, **params:str) -> pd.DataFrame:
         rows, page = [], 1
         while True:
-            body = self._get(endpoint, page, **params)
-            rows += body[1]
+            head, body = self._get(endpoint, page, **params)
+            rows += body.get("row",[])
+            total_count = int(head[0].get("list_total_count", 0))
+            log.info("Real Estate %s %s page %d (%d/%d)", 
+                     endpoint, page, params.get("table_id"), min(page * self.PAGE_SIZE, total_count), total_count)
+            if not body or page * self.PAGE_SIZE >= total_count:
+                break
+            page += 1
+            time.sleep(0.2)
+        return pd.DataFrame(rows)
+
+    def fetch_dataset(self, stat:RealEstateStat, region:str = "서울", recent_period_count:int | None=None) -> pd.DataFrame:
+        df = self.fetch_all_rows("SttsApiTblData", STATBL_ID=stat.table_id, DTACYCLE_CD="QY")
+
+        # 조회 결과가 없으면 빈 df 반환
+        if df.empty:
+            return df
+
+        # 입력한 region으로 시작하는 데이터만 반환 (예: "서울>도심>광화문")
+        if region:
+            df = df[df["CLS_FULLNM"].fillna("").str.startswith(region)]
+
+        # 최근 N개 시점(분기)의 데이터만 반환
+        if recent_period_count:
+            periods = df["WRTTIME_IDTFR_ID"].astype(str) 
+            recent_periods = sorted(periods.unique())[-recent_period_count:]
+            df = df[periods.isin(recent_periods)]
+
+        # DTA_VAL 값을 숫자로 변환
+        df["DTA_VAL"] = pd.to_numeric(df["DTA_VAL"], errors="coerce")
+
+        return df.reset_index(drop=True)
+
+
 
 
 
