@@ -6,9 +6,10 @@ import requests
 import time
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-from typing import Any, Iterator
+from typing import Any
 
 import pandas as pd
+import json
 
 log = logging.getLogger("collector")
 
@@ -209,9 +210,6 @@ class SeoulOpenApiClient:
 # ---------------------------------------------------------------------------
 # 3) 한국부동산원 R-ONE 부동산통계 OpenAPI — 상업용부동산 임대동향조사 (임대료, 공실률 등)
 # ---------------------------------------------------------------------------
-"""
-https://www.reb.or.kr/r-one/openapi/SttsApiTblData.do?KEY=76bec874f9d54e76ab413a246506d001&Type=XML&STATBL_ID=T248223134698125&DTACYCLE_CD=QY&pIndex=1&pSize=1000&WRTTIME_IDTFR_ID=202602
-"""
 @dataclass(frozen=True)
 class RealEstateStat:
     name: str
@@ -227,6 +225,13 @@ REAL_ESTATE_STATS = [
 ]
 
 class RealEstateClient:
+    """
+    R-ONE OpenAPI 클라이언트.
+        통계표 목록 : SttsApiTbl.do       (STATBL_ID, STATBL_NM ...)
+        통계 데이터 : SttsApiTblData.do   (WRTTIME_IDTFR_ID, CLS_FULLNM, ITM_NM, DTA_VAL ...)
+    응답 구조: {"<서비스>": [{"head": [{"list_total_count": N}, {"RESULT": {...}}]}, {"row": [...]}]}
+    """
+
     BASE_URL = "https://www.reb.or.kr/r-one/openapi"
     PAGE_SIZE = 1000
 
@@ -294,9 +299,37 @@ class RealEstateClient:
 
         return df.reset_index(drop=True)
 
+# ---------------------------------------------------------------------------
+# 4) amddongkor - 행정동 경계 데이터 로드 (네일숍이 위치한 행정동 이름 조회)
+# 출처: https://github.com/vuski/admdongkor
+# ---------------------------------------------------------------------------
+class AdmBoundaryLoader:
+    """ admdongkor 패키지로 서울 행정동 경계 데이터 로드 """
+    def __init__(self, version:str | None = None):
+        import admdongkor as adk
+        self.adk = adk
+        self.version = version or self.adk.versions()[-1] # 재현성을 위해 버전 명시 권장 (기본값은 가장 최신 버전)
+
+    def fetch_seoul_dong_boundaries(self) -> pd.DataFrame:
+        import shapely # 공간 데이터 처리 모듈
+        df = self.adk.get(self.version, "emd", crs="EPSG:4326") # emd=읍/면/동의 약자 crs=좌표계 설정
+
+        # 서울 지역만 필터링
+        df = df[df["sidocd"].astype(str) == SEOUL_CODE]
+
+        return pd.DataFrame({
+            "adm_code": df["emdcd"].astype(str).str[:8], # 행안부 행정동 코드 기준 8자리 (상권 분석과 join할 키)
+            "mois_adm_code": df["emdcd"].astype(str), # 행안부 행정동 코드 (10자리)
+            "stat_adm_code": df["emd8"].astype(str), # 통계청 행정동 코드 (8자리)
+            "adm_name": df["emdnm"],
+            "gu_name": df["sggnm"],
+            "base_version": str(self.version),
+            "geometry": shapely.to_geojson(df.geometry.values) # GeoJSON 문자열로 저장
+        })
 
 
 
+ 
 
 
         

@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-from common.Fetchers import build_session, SemasStoreClient, SeoulOpenApiClient, SEOUL_DATASETS, RealEstateClient, REAL_ESTATE_STATS
+from common.Fetchers import build_session, SemasStoreClient, SeoulOpenApiClient, SEOUL_DATASETS, RealEstateClient, REAL_ESTATE_STATS, AdmBoundaryLoader
 
 def require_env(name:str):
     load_dotenv()
@@ -11,9 +11,9 @@ def require_env(name:str):
     return value
 
 session = build_session()
-# semas = SemasStoreClient(require_env("SEMAS_STORE_API_KEY"),session)
-# seoul_nail_shop = semas.fetch_seoul_nail_shop()
-# print(seoul_nail_shop)
+semas = SemasStoreClient(require_env("SEMAS_STORE_API_KEY"),session)
+seoul_nail_shop = semas.fetch_seoul_nail_shop()
+print(seoul_nail_shop)
 
 # seoul = SeoulOpenApiClient(require_env("SEOUL_DATA_API_KEY"), session)
 # for dataset in SEOUL_DATASETS:
@@ -21,8 +21,11 @@ session = build_session()
 #     print(dataset.name)
 #     print(seoul_data)
 
-real_estate = RealEstateClient(require_env("REAL_ESTATE_API_KEY"), session)
-for dataset in REAL_ESTATE_STATS:
-    real_estate_data = real_estate.fetch_dataset(dataset,"서울",2)
-    print(dataset.name)
-    print(real_estate_data)
+# real_estate = RealEstateClient(require_env("REAL_ESTATE_API_KEY"), session)
+# for dataset in REAL_ESTATE_STATS:
+#     real_estate_data = real_estate.fetch_dataset(dataset,"서울",2)
+#     print(dataset.name)
+#     print(real_estate_data)
+
+# boundary = AdmBoundaryLoader("20260701")
+# print(boundary.fetch_seoul_dong_boundaries())
