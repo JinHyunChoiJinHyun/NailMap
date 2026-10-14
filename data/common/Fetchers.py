@@ -327,8 +327,11 @@ class AdmBoundaryLoader:
             "geometry": shapely.to_geojson(df.geometry.values) # GeoJSON 문자열로 저장
         })
 
-
-
+# ---------------------------------------------------------------------------
+# 5) 건축물대장 표제부 — 서울 열린데이터광장 (건물 주차대수·용도 등)
+# ---------------------------------------------------------------------------
+class SeoulBuildingRegisterLoader:
+    
  
 
 
