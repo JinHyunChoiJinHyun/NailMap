@@ -16,6 +16,7 @@ log = logging.getLogger("collector")
 
 SEOUL_CODE = "11"
 NAIL_KEYWORD = "네일"
+BASE_PATH = Path(__file__).resolve().parent.parent
 
 # ---------------------------------------------------------------------------
 # 공통 HTTP 세션 (재시도 + 타임아웃)
@@ -332,7 +333,7 @@ class AdmBoundaryLoader:
 # 5) 건축물대장 표제부 — CSV 파일 (건물 주차대수·용도 등)
 # ---------------------------------------------------------------------------
 class SeoulBuildingRegisterFileLoader:
-    ENCODINGS = ("utf-8-sig", "cp949")
+    ENCODINGS = "UTF-8"
 
     # 원본 필드명(국토부 건축물대장 표준 필드) → 저장 컬럼명
     COLUMNS = {
@@ -371,7 +372,7 @@ class SeoulBuildingRegisterFileLoader:
         "사용승인일자": "approval_date",
 
         # 데이터 관리
-        "데이터수집일": "collected_date",
+        "데이터수집일": "base_date",
     }
 
     PARKING_COLUMNS = [
@@ -381,11 +382,11 @@ class SeoulBuildingRegisterFileLoader:
         "parking_outdoor_mech",
     ]
 
-    def __init__(self, path:str | Path, base_date:str | None=None,
-                 encoding:str | None=None, chunksize:int = 100_000):
-        self.path = Path(path)
-        self.base_date = base_date
-        self.encoding = encoding
+    PARKING_PATH = BASE_PATH/"references"/"parking_lot"
+
+    def __init__(self, path:str | Path, encoding:str | None=None, chunksize:int = 100_000):
+        self.path = self.PARKING_PATH/path
+        self.encoding = encoding or self.ENCODINGS
         self.chunksize = chunksize
 
     # 데이터 타입 변경 함수
@@ -396,19 +397,26 @@ class SeoulBuildingRegisterFileLoader:
         # 데이터 타입 변환
         df[self.PARKING_COLUMNS] = df[self.PARKING_COLUMNS].apply(pd.to_numeric, errors="coerce").fillna(0).astype("int32")
         df[["floors_above", "floors_below"]] = df[["floors_above", "floors_below"]].apply(pd.to_numeric, errors="coerce").astype("Int16") # 결측치 허용
+        df["total_area_m2"] = pd.to_numeric(df["total_area_m2"], errors="coerce").astype("float32")
         
+        return df
+    
+    # 빈 행 및 중복 행 제거
+    def drop_invalid_rows(self, df:pd.DataFrame) -> pd.DataFrame:
+        missing = df["building_id"].isna()
+        if missing.any():
+            log.warning("건축물대장: 일련번호 없는 행 %d건 제외", int(missing.sum()))
 
-        # 총 주차 가능 건물 수 데이터 변환
-        df["parking_total"] = df[self.PARKING_COLUMNS].sum(axis=1).astype("int32")
-
+        return df[~missing].drop_duplicates()
 
     def fetch_seoul_buildings(self) -> pd.DataFrame:
+
         # 파일이 없거나 아닌 경우
         if not self.path.is_file():
             raise FileNotFoundError(f"건축물대장 CSV 파일이 없습니다: {self.path}")
 
         # 파일 불러오기
-        chunks, total = [], 0
+        chunks, total_row = [], 0
         reader = pd.read_csv(
             self.path,
             usecols=list(self.COLUMNS), # 키 값에 해당하는 컬럼만 반환
@@ -417,22 +425,148 @@ class SeoulBuildingRegisterFileLoader:
             chunksize=self.chunksize # 호출마다 지정한 행 수만큼 데이터를 나누어 읽음
         )
 
+        # chunksize만큼만 읽어와서 데이터 반환
         for chunk_num, chunk in enumerate(reader, start=1):
-            chunks.append(self.)
-        
-        
-        
- 
+            # chunk 데이터 타입 변환 후 리스트에 추가
+            chunks.append(self._transform(chunk))
+            total_row += len(chunk)
+            log.info("건축물대장 %s: %d번째 조각, 누적 %d행", self.path.name, chunk_num, total_row)
 
+        # chunk 데이터 결합
+        df = pd.concat(chunks, ignore_index=True) if chunks else pd.DataFrame(columns=list(self.COLUMNS.values()))
 
+        # 데이터 검증
+        df = self.drop_invalid_rows(df)
+
+        # 데이터수집일 2026-09-30 → 20260930 변환
+        df["base_date"] = df["base_date"].str.replace(r"\D", "", regex=True)
+
+        # 파일 경로 저장
+        df["source_file"] = self.path.name
+
+        # 건물별 총 주차대수 계산
+        df["parking_total"] = df[self.PARKING_COLUMNS].sum(axis=1).astype("int32")
+
+        return df.reset_index(drop=True)
+
+# ---------------------------------------------------------------------------
+# 6) 도로명주소 DB — txt 파일 (건축물대장 표제부의 건물 정보 → 행정동 매핑용)
+# 출처: 행정안전부
+# ---------------------------------------------------------------------------
+class JusoDbLoader:
+    """
+        건축물대장 표제부의 주소 정보를 도로명주소 DB와 매핑해 해당 건물의 행정동 코드를 조회
+        주소     : 도로명코드·지하여부·건물본번·부번  
+        지번     : 법정동코드·산여부·본번·부번      
+        부가정보  : 행정동 코드                      
+    """
+    JUSO_PATH = BASE_PATH/"references"/"juso"
+    ENCODING = "cp949"
+
+    # 도로명주소
+    ROAD_ADDRESS_COLUMNS = {
+        0: "management_no", # 관리번호 (pk)
+        1: "road_code",     # 도로명 코드
+        3: "underground_yn", # 지하 여부
+        4: "building_main_no", # 건물 본번
+        5: "building_sub_no", # 건물 부번
+    }
+
+    # 지번 (법정동)
+    LOT_ADDRESS_COLUMNS = {
+        0: "management_no", # 관리번호 (pk)
+        2: "legal_dong_code", # 법정동 코드
+        7: "mountain_yn", # 산 여부
+        8: "lot_main_no", # 지번본번
+        9: "lot_sub_no", # 지번부번
+    }
+
+    # 부가 정보 (행정동)
+    ADDITIONAL_INFO_COLUMNS = {
+        0: "management_no", # 관리번호 (pk)
+        1: "admin_dong_code", # 행정동 코드
+        2: "admin_dong_name", # 행정동 이름
+    }
+
+    # 파일명
+    ROAD_ADDRESS_FILE = "road_seoul.txt"
+    LOT_ADDRESS_FILE = "lot_seoul.txt"
+    ADDITIONAL_INFO_FILE = "additional_info_seoul.txt"
+
+    def __init__(self):
+        self.path = self.JUSO_PATH
+
+    def _read(self, file_name:str, columns: dict[int, str]) -> pd.DataFrame:
+        path = self.path/file_name
+
+        # 파일이 존재하지 않을 시
+        if not path.is_file():
+            raise FileNotFoundError(f"도로명주소 DB 파일이 없습니다: {path}")
+
+        # with open(path, "rb") as f:
+        #     data = f.read()
+        #     start = 39
+        #     end = 50
+        #     print(data[start:end].decode("utf-8",errors="replace"))
+
+        # 파일 존재할 시
+        df = pd.read_csv(
+            path,
+            sep="|",
+            header=None,
+            usecols=list(columns),
+            dtype=str,
+            encoding=self.ENCODING
+        )
+        df = df.rename(columns=columns)
+
+        if df.empty:
+            log.warning("도로명주소 DB %s: 읽은 행이 없습니다", file_name)
+
+        return df
+
+    def _filter_seoul(self,file_name:str, columns:dict[int,str], code_column:str) -> pd.DataFrame:
+        # 파일 read
+        df = self._read(file_name, columns)
         
+        # 서울 코드로 시작하는 행만 필터링
+        df = df[df[code_column].str.startswith(SEOUL_CODE, na=False)]
 
-        
-        
+        # 빈 값 검증
+        if df.empty:
+            raise ValueError(f"{file_name}: '{code_column}이 서울 코드로 시작하는 행이 없습니다. {columns}의 인덱스 번호를 확인하세요")
+        return df
 
+    # 건축물대장 건물의 도로명 주소와 매핑
+    def fetch_road_address(self) -> pd.DataFrame:
+        return self._filter_seoul(self.ROAD_ADDRESS_FILE, self.ROAD_ADDRESS_COLUMNS, "road_code")
 
-        
+    # 도로명 주소가 없는 건물일 경우 PNU(필지 고유번호)로 매핑
+    def fetch_legal_dong(self) -> pd.DataFrame:
+        return self._filter_seoul(self.LOT_ADDRESS_FILE, self.LOT_ADDRESS_COLUMNS, "legal_dong_code")
 
-        
+    def fetch_admin_dong(self) -> pd.DataFrame:
+        return self._filter_seoul(self.ADDITIONAL_INFO_FILE, self.ADDITIONAL_INFO_COLUMNS, "admin_dong_code")
 
+    def build_address(self) -> pd.DataFrame:
+        road = self.fetch_road_address()
+        legal = self.fetch_legal_dong()
+        admin = self.fetch_admin_dong()
 
+        df = road.merge(
+            admin,
+            on="management_no",
+            how="left",
+            validate="one_to_one" # 중복 없는 1:1 관계인지 검증
+        )
+
+        assert len(df) == len(road) # 조건이 거짓이면 에러 발생
+
+        df = df.merge(
+            legal,
+            on="management_no",
+            how="left",
+            validate="one_to_many" # 오른쪽 key 중복 허용 (여러 지번 정보 연결 가능)
+        )
+
+        return df

@@ -19,4 +19,4 @@ env/
 .ipynb_checkpoints/
 
 # file
-/data/references/
+/references/
