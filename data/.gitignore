@@ -17,3 +17,8 @@ env/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
+
+# file
+data/references/
+data/references/parking_lot/*.csv
+data/references/parking_lot/*.txt

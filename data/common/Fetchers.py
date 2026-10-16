@@ -10,6 +10,7 @@ from typing import Any
 
 import pandas as pd
 import json
+from pathlib import Path
 
 log = logging.getLogger("collector")
 
@@ -328,10 +329,99 @@ class AdmBoundaryLoader:
         })
 
 # ---------------------------------------------------------------------------
-# 5) 건축물대장 표제부 — 서울 열린데이터광장 (건물 주차대수·용도 등)
+# 5) 건축물대장 표제부 — CSV 파일 (건물 주차대수·용도 등)
 # ---------------------------------------------------------------------------
-class SeoulBuildingRegisterLoader:
-    
+class SeoulBuildingRegisterFileLoader:
+    ENCODINGS = ("utf-8-sig", "cp949")
+
+    # 원본 필드명(국토부 건축물대장 표준 필드) → 저장 컬럼명
+    COLUMNS = {
+        # 건축물 식별
+        "건축물대장일련번호": "building_id",
+
+        # 도로명주소 기반 매칭
+        "새주소도로코드명": "road_code",                  # 도로명코드 12자리
+        "새주소지상지하구분코드명": "road_underground_code",   # 0 지상, 1 지하
+        "새주소주지번": "road_main_number",                   # 건물본번
+        "새주소부지번": "road_sub_number",                    # 건물부번
+
+        # 지번주소 기반 매칭
+        "대지위치": "address_jibun",
+        "시군구코드명": "sigungu_code",
+        "법정동코드명": "legal_dong_code",
+        "대지구분코드명": "land_type_code",                    # 0 대지, 1 산, 2 블록
+        "주지번": "jibun_main_number",
+        "부지번": "jibun_sub_number",
+
+        # 건축물 구분 및 용도
+        "주부속구분코드명": "building_role_code",              # 주건축물만 센다
+        "주용도코드명": "main_purpose_code",
+        "기타용도내용": "other_purpose",
+
+        # 주차 정보
+        "옥내자주식대수": "parking_indoor_self",
+        "옥외자주식대수": "parking_outdoor_self",
+        "옥내기계식대수": "parking_indoor_mech",
+        "옥외기계식대수": "parking_outdoor_mech",
+
+        # 건물 특성
+        "지상층수": "floors_above",
+        "지하층수": "floors_below",
+        "연면적": "total_area_m2",
+        "사용승인일자": "approval_date",
+
+        # 데이터 관리
+        "데이터수집일": "collected_date",
+    }
+
+    PARKING_COLUMNS = [
+        "parking_indoor_self",
+        "parking_outdoor_self",
+        "parking_indoor_mech",
+        "parking_outdoor_mech",
+    ]
+
+    def __init__(self, path:str | Path, base_date:str | None=None,
+                 encoding:str | None=None, chunksize:int = 100_000):
+        self.path = Path(path)
+        self.base_date = base_date
+        self.encoding = encoding
+        self.chunksize = chunksize
+
+    # 데이터 타입 변경 함수
+    def _transform(self, raw_df:pd.DataFrame) -> pd.DataFrame:
+        df = raw_df.rename(columns=self.COLUMNS) # 컬럼명 변환
+        df = df.apply(lambda s: s.str.strip()) # 모든 행의 앞,뒤 공백 제거
+
+        # 데이터 타입 변환
+        df[self.PARKING_COLUMNS] = df[self.PARKING_COLUMNS].apply(pd.to_numeric, errors="coerce").fillna(0).astype("int32")
+        df[["floors_above", "floors_below"]] = df[["floors_above", "floors_below"]].apply(pd.to_numeric, errors="coerce").astype("Int16") # 결측치 허용
+        
+
+        # 총 주차 가능 건물 수 데이터 변환
+        df["parking_total"] = df[self.PARKING_COLUMNS].sum(axis=1).astype("int32")
+
+
+    def fetch_seoul_buildings(self) -> pd.DataFrame:
+        # 파일이 없거나 아닌 경우
+        if not self.path.is_file():
+            raise FileNotFoundError(f"건축물대장 CSV 파일이 없습니다: {self.path}")
+
+        # 파일 불러오기
+        chunks, total = [], 0
+        reader = pd.read_csv(
+            self.path,
+            usecols=list(self.COLUMNS), # 키 값에 해당하는 컬럼만 반환
+            dtype=str,
+            encoding=self.encoding,
+            chunksize=self.chunksize # 호출마다 지정한 행 수만큼 데이터를 나누어 읽음
+        )
+
+        for chunk_num, chunk in enumerate(reader, start=1):
+            chunks.append(self.)
+        
+        
+        
  
 
 
