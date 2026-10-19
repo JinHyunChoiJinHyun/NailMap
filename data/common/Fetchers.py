@@ -600,7 +600,7 @@ class ParkingLoader:
         "데이터기준일자":"base_date", # 기준 일자
     }
 
-    NUMBER_TYPE_COLUMNS = ["spaces", "basic_minutes", "basic_charge", "latitude", "longitude"]
+    NUMBER_TYPE_COLUMNS = ["spaces", "basic_time", "basic_charge", "latitude", "longitude"]
 
     ENCODING = "cp949"
 
@@ -620,8 +620,17 @@ class ParkingLoader:
         df[self.NUMBER_TYPE_COLUMNS] = df[self.NUMBER_TYPE_COLUMNS].apply(pd.to_numeric, errors="coerce")
         df["base_date"] = df["base_date"].str.replace(r"\D", "", regex=True)
 
+        df = self._filter_parking_within_seoul(df)
+
+        # PostGIS용 GeoJSON 문자열 변환
+        df["geometry"] = [json.dumps({"type": "Point", "coordinates": [lon, lat]})
+                          for lat, lon in zip(df["latitude"], df["longitude"])] # dict를 json으로 변환한 list
+        df["source_file"] = self.path.name
+
+        return df.reset_index(drop=True)
+
     # 서울 주변의 주차장 필터링
-    def _keep_seoul_area(df:pd.DataFrame) -> pd.DataFrame:
+    def _filter_parking_within_seoul(self, df:pd.DataFrame) -> pd.DataFrame:
         """
         서울 주변의 주차장까지 필터링 하기 위해 좌표로 필터링
         """
@@ -630,8 +639,16 @@ class ParkingLoader:
         df.loc[swapped_mask, ["latitude", "longitude"]] = df.loc[swapped_mask, ["longitude", "latitude"]]
 
         # 서울 주변 범위 내 데이터 필터링
-        within_seoul_mask = df["latitude"].between(*SEOUL_LAT_RANGE) & df["longitude"].between(*SEOUL_LON_RANGE)
+        within_seoul = df["latitude"].between(*SEOUL_LAT_RANGE) & df["longitude"].between(*SEOUL_LON_RANGE)
+
+        # 필터링 로그
         address = df["road_address"].fillna(df["lot_address"]).fillna("") # 도로명 주소가 결측인 경우 지번 주소로 대체 지번 주소도 결측인 경우 공백으로 대체
+        invalid_coord = address.str.startswith("서울") & ~within_seoul # 서울 주소이나 좌표가 유효하지 않은 경우
+        log.info("주차장: 서울 주변 %d건 남김 (위경도 교정 %d) | 서울 주소인데 좌표 없음·이상 %d건 제외",
+                int(within_seoul.sum()), int((swapped_mask & within_seoul).sum()), int(invalid_coord.sum()))
+
+        # 서울 주변 범위 행만 반환
+        return df[within_seoul]
 
 
 

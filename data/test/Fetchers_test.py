@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-from common.Fetchers import build_session, SemasStoreClient, SeoulOpenApiClient, SEOUL_DATASETS, RealEstateClient, REAL_ESTATE_STATS, AdmBoundaryLoader, SeoulBuildingRegisterFileLoader, JusoDbLoader
+from common.Fetchers import build_session, SemasStoreClient, SeoulOpenApiClient, SEOUL_DATASETS, RealEstateClient, REAL_ESTATE_STATS, AdmBoundaryLoader, SeoulBuildingRegisterFileLoader, JusoDbLoader, ParkingLoader
 
 def require_env(name:str):
     load_dotenv()
@@ -30,8 +30,11 @@ session = build_session()
 # boundary = AdmBoundaryLoader("20260701")
 # print(boundary.fetch_seoul_dong_boundaries())
 
-building = SeoulBuildingRegisterFileLoader("서울시_건축물대장_표제부.csv","CP949")
-print(building.fetch_seoul_buildings())
+# building = SeoulBuildingRegisterFileLoader("서울시_건축물대장_표제부.csv","CP949")
+# print(building.fetch_seoul_buildings())
 
 # juso = JusoDbLoader()
 # print(juso.build_address())
+
+parking = ParkingLoader("parking.csv")
+print(parking.fetch_seoul_parking_lots())
