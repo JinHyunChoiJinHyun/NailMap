@@ -30,8 +30,8 @@ session = build_session()
 # boundary = AdmBoundaryLoader("20260701")
 # print(boundary.fetch_seoul_dong_boundaries())
 
-# building = SeoulBuildingRegisterFileLoader("서울시_건축물대장_표제부.csv","CP949")
-# print(building.fetch_seoul_buildings())
+building = SeoulBuildingRegisterFileLoader("서울시_건축물대장_표제부.csv","CP949")
+print(building.fetch_seoul_buildings())
 
-juso = JusoDbLoader()
-print(juso.build_address())
+# juso = JusoDbLoader()
+# print(juso.build_address())

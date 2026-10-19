@@ -15,11 +15,15 @@ from pathlib import Path
 log = logging.getLogger("collector")
 
 SEOUL_CODE = "11"
+
+SEOUL_LAT_RANGE = (37.40, 37.72)   # 서울 위도 범위
+SEOUL_LON_RANGE = (126.75, 127.20) # 서울 경도 범위
+
 NAIL_KEYWORD = "네일"
 BASE_PATH = Path(__file__).resolve().parent.parent
 
 # ---------------------------------------------------------------------------
-# 공통 HTTP 세션 (재시도 + 타임아웃)
+# 공통 로직
 # ---------------------------------------------------------------------------
 def build_session() -> requests.Session:
     retry = Retry(
@@ -40,6 +44,36 @@ def request_json(session:requests.Session, url:str, params:dict | None = None, l
         return res.json()
     except ValueError:
         raise ApiError(f"[{label}] JSON 형식이 아닙니다: {res.text[:300]}")
+
+def _read(path:str, encoding:str, columns:dict[int, str], sep:str = "|", header:int | None = None) -> pd.DataFrame:
+
+        # 파일이 존재하지 않을 시
+        if not path.is_file():
+            raise FileNotFoundError(f"파일이 없습니다: {path}")
+
+        # 파일 존재할 시
+        df = pd.read_csv(
+            path,
+            sep=sep,
+            header=header,
+            usecols=list(columns),
+            dtype=str,
+            encoding=encoding
+        )
+        df = df.rename(columns=columns)
+
+        if df.empty:
+            log.warning("%s: 읽은 행이 없습니다", path)
+
+        return df
+
+# 빈 행 및 중복 행 제거
+def drop_invalid_rows(df:pd.DataFrame, key:str, label:str) -> pd.DataFrame:
+    missing = df[key].isna()
+    if missing.any():
+        log.warning("%s: %s 없는 행 %d건 제외", label, key, int(missing.sum()))
+
+    return df[~missing].drop_duplicates()
 
 # 입력된 오류 발생
 class ApiError(RuntimeError):
@@ -402,12 +436,12 @@ class SeoulBuildingRegisterFileLoader:
         return df
     
     # 빈 행 및 중복 행 제거
-    def drop_invalid_rows(self, df:pd.DataFrame) -> pd.DataFrame:
-        missing = df["building_id"].isna()
-        if missing.any():
-            log.warning("건축물대장: 일련번호 없는 행 %d건 제외", int(missing.sum()))
+    # def drop_invalid_rows(self, df:pd.DataFrame) -> pd.DataFrame:
+    #     missing = df["building_id"].isna()
+    #     if missing.any():
+    #         log.warning("건축물대장: 일련번호 없는 행 %d건 제외", int(missing.sum()))
 
-        return df[~missing].drop_duplicates()
+    #     return df[~missing].drop_duplicates()
 
     def fetch_seoul_buildings(self) -> pd.DataFrame:
 
@@ -436,7 +470,7 @@ class SeoulBuildingRegisterFileLoader:
         df = pd.concat(chunks, ignore_index=True) if chunks else pd.DataFrame(columns=list(self.COLUMNS.values()))
 
         # 데이터 검증
-        df = self.drop_invalid_rows(df)
+        df = drop_invalid_rows(df,"building_id","건축물대장")
 
         # 데이터수집일 2026-09-30 → 20260930 변환
         df["base_date"] = df["base_date"].str.replace(r"\D", "", regex=True)
@@ -462,6 +496,8 @@ class JusoDbLoader:
     """
     JUSO_PATH = BASE_PATH/"references"/"juso"
     ENCODING = "cp949"
+    SEPARATE = "|"
+    HEADER = None
 
     # 도로명주소
     ROAD_ADDRESS_COLUMNS = {
@@ -493,41 +529,10 @@ class JusoDbLoader:
     LOT_ADDRESS_FILE = "lot_seoul.txt"
     ADDITIONAL_INFO_FILE = "additional_info_seoul.txt"
 
-    def __init__(self):
-        self.path = self.JUSO_PATH
-
-    def _read(self, file_name:str, columns: dict[int, str]) -> pd.DataFrame:
-        path = self.path/file_name
-
-        # 파일이 존재하지 않을 시
-        if not path.is_file():
-            raise FileNotFoundError(f"도로명주소 DB 파일이 없습니다: {path}")
-
-        # with open(path, "rb") as f:
-        #     data = f.read()
-        #     start = 39
-        #     end = 50
-        #     print(data[start:end].decode("utf-8",errors="replace"))
-
-        # 파일 존재할 시
-        df = pd.read_csv(
-            path,
-            sep="|",
-            header=None,
-            usecols=list(columns),
-            dtype=str,
-            encoding=self.ENCODING
-        )
-        df = df.rename(columns=columns)
-
-        if df.empty:
-            log.warning("도로명주소 DB %s: 읽은 행이 없습니다", file_name)
-
-        return df
-
     def _filter_seoul(self,file_name:str, columns:dict[int,str], code_column:str) -> pd.DataFrame:
         # 파일 read
-        df = self._read(file_name, columns)
+        path = self.JUSO_PATH/file_name
+        df = _read(path, self.ENCODING, columns, self.SEPARATE, self.HEADER)
         
         # 서울 코드로 시작하는 행만 필터링
         df = df[df[code_column].str.startswith(SEOUL_CODE, na=False)]
@@ -570,3 +575,70 @@ class JusoDbLoader:
         )
 
         return df
+
+# ---------------------------------------------------------------------------
+# 7) 전국주차장정보표준데이터 — CSV 파일 (공영·민영 주차장)
+# 출처: "https://www.data.go.kr/data/15012896/standard.do"
+# ---------------------------------------------------------------------------
+class ParkingLoader:
+
+    PARKING_PATH = BASE_PATH/"references"/"parking"
+
+    COLUMNS = {
+        "주차장관리번호":"parking_id",
+        "주차장명":"parking_name",
+        "주차장구분":"operator_type", # 공영 / 민영
+        "주차장유형":"parking_type", # 노상 / 노외 / 부설
+        "소재지도로명주소":"road_address", 
+        "소재지지번주소":"lot_address", 
+        "주차구획수":"spaces", 
+        "요금정보":"charge_type", # 무료 / 유료 / 혼합
+        "주차기본시간":"basic_time", 
+        "주차기본요금":"basic_charge", 
+        "위도":"latitude",
+        "경도":"longitude",
+        "데이터기준일자":"base_date", # 기준 일자
+    }
+
+    NUMBER_TYPE_COLUMNS = ["spaces", "basic_minutes", "basic_charge", "latitude", "longitude"]
+
+    ENCODING = "cp949"
+
+    def __init__(self, filename:str, encoding:str = ENCODING):
+        self.path = self.PARKING_PATH/filename
+        self.encoding = encoding
+
+    def fetch_seoul_parking_lots(self):
+        # csv 불러오기
+        df = _read(self.path, self.encoding, self.COLUMNS, ",", 0)
+        log.info("주차장 파일 %s: 전국 %d건", self.path.name, len(df))
+
+        # 중복 행 제거
+        df = drop_invalid_rows(df, "parking_id", "주차장")
+
+        # 숫자 타입 변환
+        df[self.NUMBER_TYPE_COLUMNS] = df[self.NUMBER_TYPE_COLUMNS].apply(pd.to_numeric, errors="coerce")
+        df["base_date"] = df["base_date"].str.replace(r"\D", "", regex=True)
+
+    # 서울 주변의 주차장 필터링
+    def _keep_seoul_area(df:pd.DataFrame) -> pd.DataFrame:
+        """
+        서울 주변의 주차장까지 필터링 하기 위해 좌표로 필터링
+        """
+        # 위도와 경도가 뒤바뀐 행 판별 및 교환
+        swapped_mask = df["latitude"].between(*SEOUL_LON_RANGE) & df["longitude"].between(*SEOUL_LAT_RANGE)
+        df.loc[swapped_mask, ["latitude", "longitude"]] = df.loc[swapped_mask, ["longitude", "latitude"]]
+
+        # 서울 주변 범위 내 데이터 필터링
+        within_seoul_mask = df["latitude"].between(*SEOUL_LAT_RANGE) & df["longitude"].between(*SEOUL_LON_RANGE)
+        address = df["road_address"].fillna(df["lot_address"]).fillna("") # 도로명 주소가 결측인 경우 지번 주소로 대체 지번 주소도 결측인 경우 공백으로 대체
+
+
+
+
+
+
+
+    
+
+    
