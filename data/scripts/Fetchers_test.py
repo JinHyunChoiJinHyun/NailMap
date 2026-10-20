@@ -21,11 +21,11 @@ session = build_session()
 #     print(dataset.name)
 #     print(seoul_data)
 
-# real_estate = RealEstateClient(require_env("REAL_ESTATE_API_KEY"), session)
-# for dataset in REAL_ESTATE_STATS:
-#     real_estate_data = real_estate.fetch_dataset(dataset,"서울",2)
-#     print(dataset.name)
-#     print(real_estate_data)
+real_estate = RealEstateClient(require_env("REAL_ESTATE_API_KEY"), session)
+for dataset in REAL_ESTATE_STATS:
+    real_estate_data = real_estate.fetch_dataset(dataset,"서울",2)
+    print(dataset.name)
+    print(real_estate_data)
 
 # boundary = AdmBoundaryLoader("20260701")
 # print(boundary.fetch_seoul_dong_boundaries())
@@ -36,5 +36,5 @@ session = build_session()
 # juso = JusoDbLoader()
 # print(juso.build_address())
 
-parking = ParkingLoader("parking.csv")
-print(parking.fetch_seoul_parking_lots())
+# parking = ParkingLoader("parking.csv")
+# print(parking.fetch_seoul_parking_lots())

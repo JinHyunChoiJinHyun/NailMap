@@ -12,7 +12,8 @@ import pandas as pd
 import json
 from pathlib import Path
 
-log = logging.getLogger("collector")
+logging.basicConfig(level=logging.INFO)
+log = logging.getLogger(__name__) # 현재 파일의 log 기록
 
 SEOUL_CODE = "11"
 
@@ -38,8 +39,9 @@ def build_session() -> requests.Session:
     return session
 
 def request_json(session:requests.Session, url:str, params:dict | None = None, label:str = "") -> dict:
+    """HTTP 응답이 성공하면 JSON으로 파싱하여 반환"""
     res = session.get(url, params=params, timeout=60)
-    res.raise_for_status
+    res.raise_for_status() # 응답 오류 시 에러 발생
     try:
         return res.json()
     except ValueError:
@@ -113,14 +115,14 @@ class SemasStoreClient:
 
         # 정상 반환인 경우 00 반환
         if code != "00": 
-            raise ApiError(f"[{endpoint}] {code} {header.get("resultMsg")}")
+            raise ApiError(f'[{endpoint}] {code} {header.get("resultMsg")}')
 
         return data.get("body", {})
 
     def fetch_all_rows(self, div_id:str, key:str, **filters:str) -> pd.DataFrame:
         rows, page = [], 1
         while True:
-            body = self._get("storeListInDong", div_id=div_id, key=key,pageNo=page,
+            body = self._get("storeListInDong", divId=div_id, key=key,pageNo=page,
                              numOfRows=self.PAGE_SIZE, **filters)
             rows += body.get("items", [])
             totalCount = int(body.get("totalCount", 0))
@@ -295,9 +297,16 @@ class RealEstateClient:
             if res.get("CODE") == "INFO-200":
                 return 0, []
             raise ApiError(f"[{endpoint}] {res.get("CODE")} {res.get("MESSAGE")}")
-        head = data[endpoint][0]
-        body = data[endpoint][1]
-        return head.get("head"), body
+        
+        # 응답 데이터 구조 검증
+        result = data[endpoint]
+        if not isinstance(result, list) or len(result) < 2: # 응답 결과가 list 형태가 아니거나 2개 미만일 경우
+            raise ApiError(f"[{endpoint}] 응답 데이터 구조가 올바르지 않습니다.")
+        
+        head = result[0].get("head")
+        body = result[1]
+
+        return head, body
 
     def fetch_all_rows(self, endpoint:str, **params:str) -> pd.DataFrame:
         rows, page = [], 1
@@ -306,7 +315,7 @@ class RealEstateClient:
             rows += body.get("row",[])
             total_count = int(head[0].get("list_total_count", 0))
             log.info("Real Estate %s %s page %d (%d/%d)", 
-                     endpoint, page, params.get("table_id"), min(page * self.PAGE_SIZE, total_count), total_count)
+                     endpoint, params.get("STATBL_ID"), page, min(page * self.PAGE_SIZE, total_count), total_count)
             if not body or page * self.PAGE_SIZE >= total_count:
                 break
             page += 1
