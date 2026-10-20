@@ -645,7 +645,7 @@ class ParkingLoader:
         """
         # 위도와 경도가 뒤바뀐 행 판별 및 교환
         swapped_mask = df["latitude"].between(*SEOUL_LON_RANGE) & df["longitude"].between(*SEOUL_LAT_RANGE)
-        df.loc[swapped_mask, ["latitude", "longitude"]] = df.loc[swapped_mask, ["longitude", "latitude"]]
+        df.loc[swapped_mask, ["latitude", "longitude"]] = df.loc[swapped_mask, ["longitude", "latitude"]].to_numpy() # pandas의 라벨링 정렬없이 배열 순서대로 값 교환
 
         # 서울 주변 범위 내 데이터 필터링
         within_seoul = df["latitude"].between(*SEOUL_LAT_RANGE) & df["longitude"].between(*SEOUL_LON_RANGE)
