@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-from common.Fetchers import build_session, SemasStoreClient, SeoulOpenApiClient, SEOUL_DATASETS, RealEstateClient, REAL_ESTATE_STATS, AdmBoundaryLoader, SeoulBuildingRegisterFileLoader, JusoDbLoader, ParkingLoader
+from clients.Fetchers import build_session, SemasStoreClient, SeoulOpenApiClient, SEOUL_DATASETS, RealEstateClient, REAL_ESTATE_STATS, AdmBoundaryLoader, SeoulBuildingRegisterFileLoader, JusoDbLoader, ParkingLoader
 
 def require_env(name:str):
     load_dotenv()

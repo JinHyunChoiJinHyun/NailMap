@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+*.ipynb
+Dockerfile
+.dockerignore
+# volumes로 읽을 예정
+references/
