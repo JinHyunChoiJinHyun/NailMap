@@ -43,8 +43,9 @@ class Database:
             sql_expressions: dict[str, str] | None=None,
             method: Literal["insert", "copy"] = "insert"
     ) -> int:
-        """
+        """ 
         df를 테이블에 저장
+
         method:
             "insert" - 기본값
             "copy" - 대량 데이터 적재 시 사용 임시 테이블에 넣고 한번에 최종 테이블에 반영
@@ -60,6 +61,24 @@ class Database:
         # key column 존재 여부 검증
         columns = list(df.columns)
         missing_keys = [key for key in key_columns if key not in columns]
+        if missing_keys:
+            raise ValueError(f"{table}: 키 컬럼 {missing_keys}이(가) 데이터에 없습니다.")
+        if method == "copy" and sql_expressions:
+            raise ValueError("copy 방식은 sql_expression을 지원하지 않습니다.")
+        
+        rows = 
+    
+    def _build_upsert_rows(
+            table:str, 
+            df:pd.DataFrame, 
+            columns:list[str],
+            key_columns:list[str]
+        ) -> list[list]:
+        """upsert에 넣을 행 만들기
+        1. 값 정리 (_clean)
+        2. PK가 NULL인 행 제외 - NOT NULL 에러로 같은 transaction의 저장 전체가 취소되는 것을 방지
+        3. 같은 PK는 마지막 행만 남김 - 원본 데이터 중복을 로그로 확인하기 위함
+        """
         
 
 # ---------------------------------------------------------------------------
@@ -72,4 +91,4 @@ class AdmBoundaryRepository:
         self.db = db
 
     def save(self, df:pd.DataFrame) -> int:
-        return self.db.
+        return self.db. 
