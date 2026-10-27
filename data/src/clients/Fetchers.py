@@ -658,13 +658,4 @@ class ParkingLoader:
 
         # 서울 주변 범위 행만 반환
         return df[within_seoul]
-
-
-
-
-
-
-
-    
-
-    
+   
